@@ -1,11 +1,41 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: "Nunito", sans-serif;
+  margin-top: 30px;
 }
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-style: italic;
+}
+img {
+  display: inline-block;
+}
+/* ==== Header ==== */
+.header {
+  width: 50%;
+  margin: 0 auto;
+}
+.list {
+  display: flex;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.list_item {
+  width: 33%;
+  margin-right: 25px;
+}
+.list_item:last-child {
+  margin-right: 0;
+}
+/* ==== Div Resister_form ==== */
 .regist {
   width: 420px;
   height: 100%;
@@ -16,13 +46,12 @@ body {
     0px 20px 32px rgba(96, 97, 112, 0.24);
   border-radius: 20px;
 }
-/* .regist_link {
-  display: block;
-  position: absolute;
-  right: 0;
-} */
-img {
-  display: inline-block;
+.regist_close {
+  text-align: right;
+}
+.regist_close_btn {
+  border: none;
+  background-color: transparent;
 }
 .rigist_title {
   font-weight: 800;
@@ -32,7 +61,7 @@ img {
 }
 .form_control_email {
   width: 100%;
-  height: 48px;
+  /* height: 48px; */
   margin-bottom: 8px;
   border: 1px solid #cfd8dc;
   outline: none;
@@ -49,10 +78,9 @@ img {
   line-height: calc(20px / 16px);
   color: #1a1a1a;
 }
-
 .form_control_password {
   width: 100%;
-  height: 48px;
+  /* height: 48px; */
   border: 1px solid #cfd8dc;
   outline: none;
   border-radius: 12px;
@@ -100,4 +128,46 @@ img {
   font-size: 16px;
   line-height: calc(20px / 16px);
   background-color: transparent;
+}
+
+/* ==== Div Enter_form ==== */
+
+.form_control_pass {
+  width: 100%;
+  /* height: 48px; */
+  border: 1px solid #cfd8dc;
+  outline: none;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  padding: 14px 16px;
+  box-sizing: border-box;
+}
+.form_control_pass:focus {
+  border: 1px solid #ffe44d;
+  caret-color: #ffaa0d;
+}
+.form_control_pass::placeholder {
+  font-size: 16px;
+  line-height: calc(20px / 16px);
+  color: #1a1a1a;
+}
+.enter_p {
+  color: #7b8e98;
+  font-size: 14px;
+  line-height: calc(20px / 14px);
+  margin-bottom: 24px;
+  text-align: right;
+}
+
+/* ==== Div Password_recovery_form ==== */
+.pass_p {
+  font-size: 14px;
+  line-height: calc(20px / 14px);
+  color: #7b8e98;
+  margin-bottom: 24px;
+}
+.pass_email::placeholder {
+  font-size: 16px;
+  line-height: calc(20px / 16px);
+  color: #7b8e98;
 }
