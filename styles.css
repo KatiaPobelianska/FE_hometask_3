@@ -9,30 +9,21 @@ body {
 .regist {
   width: 420px;
   height: 100%;
-  padding: 40px 32px 32px;
+  padding: 16px 32px 32px;
   margin: 0 auto;
   background: #ffffff;
   box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.08),
     0px 20px 32px rgba(96, 97, 112, 0.24);
   border-radius: 20px;
 }
-/* .regist_btn_close {
+/* .regist_link {
+  display: block;
   position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  border-radius: 50%;
-  background-color: transparent;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-}
-.close_link {
-  fill: #1a1a1a;
+  right: 0;
 } */
+img {
+  display: inline-block;
+}
 .rigist_title {
   font-weight: 800;
   font-size: 28px;
@@ -43,10 +34,15 @@ body {
   width: 100%;
   height: 48px;
   margin-bottom: 8px;
-  border: 1px solid #ffe44d;
+  border: 1px solid #cfd8dc;
+  outline: none;
   border-radius: 12px;
   padding: 21px 15px 7px;
   box-sizing: border-box;
+}
+.form_control_email:focus {
+  border: 1px solid #ffe44d;
+  caret-color: #ffaa0d;
 }
 .form_control_email::placeholder {
   font-size: 16px;
@@ -58,10 +54,15 @@ body {
   width: 100%;
   height: 48px;
   border: 1px solid #cfd8dc;
+  outline: none;
   border-radius: 12px;
   margin-bottom: 24px;
   padding: 14px 16px;
   box-sizing: border-box;
+}
+.form_control_password:focus {
+  border: 1px solid #ffe44d;
+  caret-color: #ffaa0d;
 }
 .form_control_password::placeholder {
   font-size: 16px;
