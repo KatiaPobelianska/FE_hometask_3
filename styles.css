@@ -16,7 +16,7 @@ a {
   font-style: italic;
 }
 img {
-  display: inline-block;
+  display: block;
 }
 /* ==== Header ==== */
 .header {
@@ -52,6 +52,7 @@ img {
 .regist_close_btn {
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 .rigist_title {
   font-weight: 800;
